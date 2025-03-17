@@ -16,7 +16,7 @@ int main() {
     scanf("%4s", Codigo); // Lê até 4 caracteres para o código
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", Nome); // Lê o nome da cidade incluindo espaços
+    scanf(" %59[^\n]", Nome); // Lê o nome da cidade incluindo espaços
 
     printf("Digite a população: ");
     scanf("%d", &Populacao);
