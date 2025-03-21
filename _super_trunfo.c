@@ -1,13 +1,17 @@
 #include <stdio.h>
 
+
+
 int main() {
-    char Estado[3]; // Aumenta o tamanho para 3 para incluir o caractere nulo
-    char Codigo[5]; // Aumenta o tamanho para 5 para incluir o caractere nulo
-    char Nome[60]; // Mantém o tamanho 60 para o nome da cidade
-    int Populacao; // Declara uma variável inteira chamada "Populacao"
-    float Area; // Declara uma variável de ponto flutuante chamada "area metro quadrado"
-    float PIB; // Declara uma variável de ponto flutuante chamada "pib"
-    int Numero;  // Declara uma variável inteira chamada "numero de pontos turisticos"
+    // Variaveis da primeira carta
+    int poulacao1, pontos_turisticos1;
+    float area1, PIB1;
+    char cidade1[20], codigo1[3], estado1;
+
+    // Variaveis da segunda carta
+    int poulacao2, pontos_turisticos2;
+    float area2, PIB2;
+    char cidade2[20], codigo2[3], estado2;
 
     printf("Digite o estado: ");
     scanf("%2s", Estado); // Lê até 2 caracteres para o estado
