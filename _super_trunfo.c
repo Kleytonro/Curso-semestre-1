@@ -34,8 +34,8 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos1);
 
-    pibpercapta1 = PIB1/populacao1;
     densidade1 = populacao1/area1;
+    pibpercapta1 = (PIB1*1000000000)/populacao1;
     
     printf("\nCarta 01:\n");
     printf("Estado: %s\n", estado1);
@@ -71,8 +71,8 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos2);
 
-    pibpercapta2 = PIB2/populacao2;
-    densidade2 = populacao2/area2;
+    densidade1 = populacao1/area1;
+    pibpercapta1 = (PIB1*1000000000)/populacao1;
 
     printf("\nCarta 02:\n");
     printf("Estado: %s\n", estado2);
