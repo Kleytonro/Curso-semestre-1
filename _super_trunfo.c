@@ -2,13 +2,15 @@
 
 int main() {
     // Variaveis da primeira carta
+    unsigned long int populacao1;
     int pontos_turisticos1;
-    float area1, PIB1, densidade1, pibpercapta1, populacao1;
+    float area1, PIB1, densidade1, pibpercapta1, super_poder1;
     char cidade1[20], codigo1[3], estado1[3];
 
     // Variaveis da segunda carta
+    unsigned long int populacao2;
     int pontos_turisticos2;
-    float area2, PIB2, densidade2, pibpercapta2, populacao2;
+    float area2, PIB2, densidade2, pibpercapta2, super_poder2;
     char cidade2[20], codigo2[3], estado2[3];
 
     // Cadastro da primeira carta
@@ -34,8 +36,10 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos1);
 
-    densidade1 = populacao1/area1;
-    pibpercapta1 = (PIB1*1000000000)/populacao1;
+    // Cálculos para primeira carta
+    densidade1 = area1 > 0 ? populacao1 / area1 : 0;
+    pibpercapta1 = poulacao1 > 0 ? (PIB1*1000000000)/populacao1 : 0;
+    super_poder1 = populacao1 + area1 + PIB1 + pontos_turisticos1 + pibpercapta + (densidade > 0 ? 1/densidade1 : 0);
     
     printf("\nCarta 01:\n");
     printf("Estado: %s\n", estado1);
